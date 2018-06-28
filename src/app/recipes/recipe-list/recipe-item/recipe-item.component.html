@@ -1,0 +1,11 @@
+<div class="list-group">
+    <a style="cursor: pointer" class="list-group-item list-group-item-action d-flex justify-content-between" [routerLink]="[index]" routerLinkActive="active">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h5 class="card-title text-center">{{ recipe.name }}</h5>
+            <p class="card-text">{{ recipe.description }}</p>
+        </div>
+        <div>
+            <img style="max-width: 100px; height: auto;" src="{{ recipe.imagePath }}" alt="{{ recipe.name }}">
+        </div>
+    </a>
+</div>
